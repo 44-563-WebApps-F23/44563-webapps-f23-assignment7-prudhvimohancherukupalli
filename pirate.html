@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the treasure by Prudhvi Mohan Cherukupalli</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        
+        #instructions {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #locations,#penalty,#help {
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+        #locations,#penalty {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .help-button {
+            cursor: pointer;
+            color:black;
+            text-decoration: underline;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .help-report {
+            display: none;
+            margin-top: 10px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            width: 100px;
+        }
+        .flex-container > div {  /*div children of the flex container*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4" >Find the treasure by Prudhvi Mohan Cherukupalli</h1>
+        <div class="mb-4" id="instructions">Click on the locations to search for treasure, beware the traps</div>
+        <div class="info-box" id="locations">Number of locations checked is zero.</div>
+        <div id="penalty">Penalty is zero.</div>
+        <div class="help-button">Click for help</div>
+        <div id="help" class="help-report mt-3">Help report</div>
+
+    <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" >
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" >
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+        </div>
+     </div>
+    </div>
+</div>
+    <script>
+        const helpButton = document.querySelector('.help-button');
+        const helpReport = document.getElementById('help');
+        helpButton.addEventListener('click', () => {
+            helpReport.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
