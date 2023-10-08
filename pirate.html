@@ -44,10 +44,10 @@
             text-decoration: underline;
             font-size: large;
             font-weight: bold;
+            align-items: center;
         }
 
         .help-report {
-            display: none;
             margin-top: 10px;
         }
         .flex-container{
@@ -66,106 +66,172 @@
         <div class="mb-4" id="instructions">Click on the locations to search for treasure, beware the traps</div>
         <div class="info-box" id="locations">Number of locations checked is zero.</div>
         <div id="penalty">Penalty is zero.</div>
-        <div class="help-button">Click for help</div>
+        <div class="help-button" onclick="help()">Click for help</div>
         <div id="help" class="help-report mt-3">Help report</div>
 
     <div class="flex-container">
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-1" onclick="check(0)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-2" onclick="check(1)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-3" onclick="check(2)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-4" onclick="check(3)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-     </div>
-
-     <div class="flex-container">
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-5" onclick="check(4)">
         </div>
      </div>
 
      <div class="flex-container">
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-6" onclick="check(5)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-7" onclick="check(6)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-8" onclick="check(7)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-9" onclick="check(8)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-     </div>
-
-     <div class="flex-container">
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" >
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" >
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
-        </div>
-        <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-10" onclick="check(9)">
         </div>
      </div>
 
      <div class="flex-container">
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-11" onclick="check(10)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-12" onclick="check(11)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-13" onclick="check(12)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-14" onclick="check(13)">
         </div>
         <div class="col-sm">
-          <img src="starting_location.jpg" alt="starting_location" height="100" width="100">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-15" onclick="check(14)">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-16" onclick="check(15)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-17" onclick="check(16)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-18" onclick="check(17)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-19" onclick="check(18)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-20" onclick="check(19)">
+        </div>
+     </div>
+
+     <div class="flex-container">
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-21"onclick="check(20)" >
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-22" onclick="check(21)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-23" onclick="check(22)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-24" onclick="check(23)">
+        </div>
+        <div class="col-sm">
+          <img src="starting_location.jpg" alt="starting_location" height="100" width="100" id="img-25" onclick="check(24)">
         </div>
      </div>
     </div>
 </div>
     <script>
+        const locationElement = document.getElementById("locations");
+        const penaltyElement = document.getElementById("penalty")
         const helpButton = document.querySelector('.help-button');
         const helpReport = document.getElementById('help');
-        helpButton.addEventListener('click', () => {
-            helpReport.style.display = 'block';
-        });
+
+        var ids=["img-1","img-2","img-3","img-4","img-5","img-6","img-7","img-8",
+           "img-9","img-10","img-11","img-12","img-13","img-14","img-15","img-16",
+           "img-17","img-18","img-19","img-20","img-21","img-22","img-23","img-24","img-25"];
+        let checkCount=0;
+        let penalty=0;
+        let lastCheck=0;
+        let treasureLocation=5;
+        let trapLocation=18;
+        let gameOver=false;
+
+        function Prudhvi(){
+          alert("Pruv")
+        }
+        function check(position){
+          if(!gameOver){
+          const imageId = ids[position];
+          const imageElement=document.getElementById(imageId);
+          const helpElement=document.getElementById("help");
+
+          if(position === treasureLocation){
+            imageElement.src='treasure.jpg';
+            gameOver=true;
+            penalty-=3;
+            penaltyElement.innerText=`Penalty is ${penalty}`;
+          }else if (position === trapLocation) {
+              imageElement.src = 'trap.jpg';
+              gameOver = true;
+              penalty += 4;
+              penaltyElement.innerText=`Penalty is ${penalty}`;
+          } else {
+              imageElement.src = 'pirate.jpg';
+              penalty += 1;
+              checkCount +=1;
+              locationElement.innerText=`Number of locations checked is ${checkCount}`;
+              penaltyElement.innerText=`Penalty is ${penalty}`;
+          }
+          lastCheck=position;
+        }
+        }
+
+        function help(position){
+          const row = Math.floor(position / 5);
+          const col = position % 5;
+          const treasureRow = Math.floor(treasureLocation / 5);
+          const treasureCol = treasureLocation % 5;
+          const lastRow = Math.floor(lastCheck / 5);
+          const lastCol = lastCheck % 5;
+
+          const rowDifference = Math.abs(treasureRow - lastRow);
+          const colDifference = Math.abs(treasureCol - lastCol);
+
+          if ((rowDifference <= 1 && colDifference <= 1) && (rowDifference + colDifference) !== 0) {
+              helpReport.innerText = 'Can smell it';
+              penalty+=2;
+              penaltyElement.innerText=`Penalty is ${penalty}`;
+               
+          } else if (rowDifference + colDifference === 2) {
+              helpReport.innerText = 'Close Matie';
+              penalty+=2;
+              penaltyElement.innerText=`Penalty is ${penalty}`;
+          } else {
+              helpReport.innerText = 'Step Faster';
+              penalty+=2;
+              penaltyElement.innerText=`Penalty is ${penalty}`;
+          }
+        }
     </script>
 </body>
 </html>
