@@ -17,6 +17,7 @@
         <div class="mb-3" id="counter">Count: </div>
         <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
         <button type="button" class="btn btn-success" onclick="recordTime()">React</button>
+        <button class="btn btn-warning btn-new-game" onclick="startNewGame()">New Game</button>
     </div>
   
   <script> 
@@ -27,6 +28,9 @@
     }
 
     function startTime() {
+
+        document.getElementById('target').innerText = 'Your time: ';
+        document.getElementById('counter').innerText = 'Count: ';
       for (let i = 0; i < 9; i++) {
         setTimeout(function() {
           document.getElementById('counter').innerHTML = 'Count: ' + i;
@@ -40,10 +44,40 @@
         else{
             let endTime = Date.now();
             let elapsedTime = endTime - reactTime;
-            document.getElementById('target').innerHTML = 'Time was ' + elapsedTime + ' milliseconds';
+            document.getElementById('target').innerHTML = `Time was ${elapsedTime} milliseconds`;
         }
       }, 8000);
     }
+
+    function startNewGame() {
+    reactTime = undefined;
+    document.getElementById('target').innerText = 'Your time: ';
+    document.getElementById('counter').innerText = 'Count: ';
+
+    let countdownTime = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
+
+    let tooSlowTimeout = setTimeout(() => {
+        document.getElementById('target').innerText = 'Too Slow';
+    }, countdownTime * 1000);
+
+    for (let i = countdownTime; i >= 0; i--) {
+        setTimeout(() => {
+            document.getElementById('counter').innerText = `Count: ${i}`;
+        }, (countdownTime - i) * 1000);
+    }
+
+    setTimeout(() => {
+        clearTimeout(tooSlowTimeout);
+        if (reactTime === undefined) {
+            document.getElementById('target').innerText = 'Too Slow';
+        } else {
+            let endTime = Date.now();
+            let elapsedTime = endTime - reactTime;
+            document.getElementById('target').innerText = `Your time: ${elapsedTime} milliseconds`;
+        }
+    }, countdownTime * 1000);
+}
+
   </script>
 
 </body>
