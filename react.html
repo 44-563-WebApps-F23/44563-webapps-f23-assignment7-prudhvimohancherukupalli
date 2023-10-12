@@ -17,7 +17,7 @@
         <div class="mb-3" id="counter">Count: </div>
         <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
         <button type="button" class="btn btn-success" onclick="recordTime()">React</button>
-        <button class="btn btn-warning btn-new-game" onclick="startNewGame()">New Game</button>
+        <button class="btn btn-warning btn-new-game" onclick="random()">Random</button>
     </div>
   
   <script> 
@@ -49,7 +49,7 @@
       }, 8000);
     }
 
-    function startNewGame() {
+    function random() {
     reactTime = undefined;
     document.getElementById('target').innerText = 'Your time: ';
     document.getElementById('counter').innerText = 'Count: ';
